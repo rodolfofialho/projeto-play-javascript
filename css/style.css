@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #343537;
+    color: #ddd;
+    font-family: 'Montserrat', sans-serif;
+}
+img{
+    width: 300px;
+    height: 300px;
+}
+
+.descricao{
+    width: 300px;
+    margin-top: 10px;
+}
+
+.duracao{
+    width: 300px;
+    margin-top: 25px;
+}
+
+.barra-tempo{
+    width: 300px;
+    height: 6px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+progress{
+    height: 6px;
+    width: 0;
+    background-color: #343537;
+}
+
+.ponto{
+    width: 20px;
+    height: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+    margin-left: -10px;
+}
+
+.ponto:hover{
+    background-color: rgb(198, 195, 195);
+    cursor: pointer;
+}
+
+.tempo{
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.play{
+    width: 300px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn-play, .btn-pause{
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.btn-pause{
+    display: none;
+}
+
+.btn-prox, .btn-voltar{
+    font-size: 40px;
+    cursor: pointer;
+}
